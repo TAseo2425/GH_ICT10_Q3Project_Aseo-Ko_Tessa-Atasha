@@ -7,8 +7,7 @@ def team(t):
     medcert = document.querySelector('input[name="body"]:checked').value
     registration = document.querySelector('input[name="reg"]:checked').value
     section = document.getElementById('section').value
-    grade = document.getElementById('input[name="grade"]:checked).value
-
+    
     if medcert == 'not' and registration == 'not':
         display(f'Obtain a cleared medical certificate and complete the online registration.', target='output')
     elif medcert == 'not' and registration == 'signed':
@@ -23,7 +22,8 @@ def team(t):
         display(f'Congratulations. You are now in Blue Bears!', target='output')
     elif registration == 'signed' and medcert == 'cleared' and section == 'topaz':
         display(f'Congratulations. You are now in Yellow Tigers!', target='output')
-    elif medcert == None or registration == None or grade == None:
+    else:
         display(f'Please fill all fields.', target='output')
+
 
 
