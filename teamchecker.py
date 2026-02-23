@@ -22,5 +22,6 @@ def team(t):
         display(f'Congratulations. You are now in Blue Bears!', target='output')
     elif registration == 'signed' and medcert == 'cleared' and section == 'topaz':
         display(f'Congratulations. You are now in Yellow Tigers!', target='output')
-    else:
+    elif medcert == None or registration == None or section == None:
         display(f'Please fill all fields.', target='output')
+
