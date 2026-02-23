@@ -7,6 +7,7 @@ def account_authenticator(e):
     username = document.getElementById('username').value
     password = document.getElementById('password').value
 
+#character counter
     user_count = 0
     for letter in username:
         user_count += 1
@@ -20,6 +21,7 @@ def account_authenticator(e):
             has_letter = False
             has_number = False
 
+    #password requirements
             for letter in password:
                 if letter.isalpha():
                     has_letter = True
@@ -34,8 +36,10 @@ def account_authenticator(e):
             else:
                 display("Password MUST contain at least ONE LETTER.", target="output")
 
+    #character requirements
         else:
             display("Password must be at least 10 characters long.", target="output")
 
     else:
         display("Username must be at least 7 characters long.", target="output")
+
