@@ -28,9 +28,11 @@ def intramsplayers(t):
 '23. SHRESTHA, ISHAN JUSTICE Q.',
 '24. UY, JENNIFER LORRAINE S.',
 '25. YAO, FRANCESCA JEAN K.']
-    
+
+#displays players:
     for players in players:
         display(f'{players}', target='output')
     
+
 
 
