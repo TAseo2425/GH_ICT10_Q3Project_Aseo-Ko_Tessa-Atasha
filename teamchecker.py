@@ -23,4 +23,4 @@ def team(t):
     elif registration == 'signed' and medcert == 'cleared' and section == 'topaz':
         display(f'Congratulations. You are now in Yellow Tigers!', target='output')
     else:
-        display(f'INVALID.', target='output')
+        display(f'Please fill all fields.', target='output')
